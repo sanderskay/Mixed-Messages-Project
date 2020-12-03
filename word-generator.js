@@ -12,5 +12,12 @@ const thirdPhrase = [
   " don't ruin this for me.",
 ];
 
-// function will return firstPhrase etc each using Math.random
-// to return a random line from each array
+function wordGenerator() {
+  return (
+    firstPhrase[Math.floor(firstPhrase.length * Math.random())] +
+    secondPhrase[Math.floor(secondPhrase.length * Math.random())] +
+    thirdPhrase[Math.floor(thirdPhrase.length * Math.random())]
+  );
+}
+
+console.log(wordGenerator());
